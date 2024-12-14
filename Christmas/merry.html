@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HAPPY DIWALI</title>
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+		.loginpopup{
+			width: 1000px;
+			height: 550px;
+			margin: auto;
+			left: 20%;
+			position: fixed;
+			color:#f1c40f;
+			text-align: center;
+			border-radius: 20%;
+			text-decoration: none;
+			top: -200%;
+			background-color: #e74c3c;
+			transition: 2s;
+			font-size:100px;
+			z-index: 1;
+		}
+		.showLoginForm{
+			top: 20%;
+		}
+		p{
+			font-size: 30px;
+		}
+		body{
+			background-color: #2980b9;
+		}
+		#Enquire{
+			text-align: center;
+			margin: 350px;
+			transform: translate(-50px,-50px);
+			font-size: 40px;
+			z-index: 0px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="loginpopup" id="loginPopup">
+		<!--  -->
+		<h6>Merry Christmas To All</h6>
+		<img src="D:\Main\Desktop\Christmas\tree.avif">
+		<p>May this season be full of light and laughter for <br> you and your family.</p>
+	</div>
+	<button id="Enquire"onclick="showPopup()">Click me</button>
+</body>
+
+<script type="text/javascript"> 
+	function showPopup(){
+		var l=document.getElementById('loginPopup');
+		l.classList.add('showLoginForm')
+	}
+	function hidePopup(){
+		var l=document.getElementById('loginPopup');
+		l.classList.remove('showLoginForm')
+	}
+</script>
+</html>
