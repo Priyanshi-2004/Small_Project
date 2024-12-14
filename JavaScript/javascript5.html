@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this keyword</title>
+</head>
+<body>
+	<img src="images/i1.jpg" id="img1"
+	onmouseover="changeImage(this,'images/i2.jpg')"
+	onmouseout="changeImage(this,'images/i1.jpg')"
+	>
+</body>
+<script type="text/javascript">
+	function changeImage(imgTag,path){
+		imgTag.src=path;
+		imgTag.width="350";
+		imgTag.height="450";
+	}
+</script>
+</html>

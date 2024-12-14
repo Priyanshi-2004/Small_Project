@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>only for mobile</title>
+	<style type="text/css">
+		
+		*{
+			margin: 0px;
+			padding: 0px;
+
+			}
+			.menu{
+			width: 80%;
+			height: 
+			background-color:orange;
+		}
+		button{
+			position: 
+		}
+		.showMenu{
+			left:0%;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="showMenu()">Menu</button>
+	<div class="menu"></div>
+	<script type="text/javascript">
+		function showMenu(){ 
+		var m=document.getElementsByClassName('menu');
+		m[0].classList.add('showMenu')
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Effect</title>
+</head>
+<body>
+	<img src="images/i1.jpg"
+	id="img1"
+	onmouseover="changeImage()"
+	onmouseout="changeImage1()"
+	/>
+</body>
+<script>
+	function changeImage(){
+		document.getElementById("img1").
+		src="images/i2.jpg";
+
+	}
+	function changeImage1(){
+		document.getElementById("img1").
+		src="images/i1.jpg";
+	}
+</script>
+</html>

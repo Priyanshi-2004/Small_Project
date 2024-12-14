@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<script>
+		function showPassword(){
+			var b=document.getElementById('btn');
+			var p=document.getElementById('password');
+			if(b.value=="show"){
+				p.type="text";
+				b.value="hide";
+			}
+			else{
+				p.type="text";
+				b.value="hide";
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="password" id="password"/>
+	<input type="button" id="btn" value="show" onclick="showPassword()" onmouseout="showPassword()">
+	<!-- <button onclick="showPassword()">show</button> -->
+</body>
+</html>

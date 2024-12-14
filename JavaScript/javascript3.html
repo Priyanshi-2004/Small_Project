@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+</head>
+<body>
+	Num 1<input type="text" id="num1" /><br/>
+	opr <select id='opr'>
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select></br>
+	Num 2<input type="text" id="num2" /><br/>
+	<button onclick="simpleCalc()">Cal</button></br>
+	output<input type="text" id="output"/></br>
+</body>
+<script type="text/javascript">
+	function simpleCalc(){
+		var n1=parseInt(document.getElementById('num1').value);
+		var opr=document.getElementById('opr').value;
+		var n2=parseInt(document.getElementById('num2').value);
+		if(opr=="+"){
+			var c=n1+n2;
+		}
+		else if(opr=="-"){
+			var c=n1-n2;
+		}
+		else if(opr=="*"){
+			var c=n1*n2;
+		}
+		else if(opr=="/"){
+			var c=n1/n2;
+		}
+		document.getElementById("output").value=c;
+	}
+</script>
+</html>

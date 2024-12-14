@@ -1,0 +1,27 @@
+->Types of Array:-
+1. Index Array
+2. Multi - Dimensional array
+3. Associate array
+
+->Array Access:-
+map
+filter
+reduce
+
+
+->Array Methods:-
+pop()
+push()
+shift() // remove first element
+unshift() // add element is starting
+includes() // gives result in boolean ,that this element is in array or not
+
+
+Functions:-
+Pre-defined function
+USer-defined function
+return-type function
+
+->DOM
+Difference between innerText and innerHTML
+

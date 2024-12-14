@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POP UP</title>
+	<style type="text/css">
+		.loginpopup{
+			width: 400px;
+			height: 400px;
+			margin: auto;
+			left: 50%;
+			position: fixed;
+			top: -200%;
+			border:2px orange solid;
+			transition: 2s;
+		}
+		.loginpopup form{
+			margin: 30px;
+		}
+		.loginpopup input{
+			width: 100%;
+			background-color: yellow;
+		}
+		.loginpopup label{
+			display: block;
+			padding: 7px;
+
+		}
+		.loginpopup textarea{
+			width: 100%;
+			height: 80px;
+		}
+		.loginpopup button{
+			background-color: orange;
+			width: 100%;
+			color:white;
+		}
+		.loginpopup span{
+			background-color: orange;
+			color: white;
+			font-size: 40px;
+		}
+		.showLoginForm{
+			top: 10%;
+		}
+	</style>
+</head>
+<body>
+	<div class="loginpopup" id="loginPopup">
+		<span onclick="hidePopup()">&times;</span>
+		<form>
+			<label>Name</label>
+			<input type="text"/>
+			<label>Email</label>
+			<input type="text" name=""/>
+			<label>phone</label>
+			<input type="text" name=""/>
+			<label>Message</label>
+			<input type="text" name=""/>
+			<textarea></textarea>
+			<button >Enquire Now</button>	
+		</form>
+	</div>
+	<button onclick="showPopup()">Enquire Now</button>
+	<script type="text/javascript">
+		function showPopup(){
+			var l=document.getElementById('loginPopup');
+			l.classList.add('showLoginForm')
+		}
+		function hidePopup(){
+			var l=document.getElementById('loginPopup');
+			l.classList.remove('showLoginForm')
+		}
+		</script>
+		</html>
