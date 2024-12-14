@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Designing Page</title>
+</head>
+<style type="text/css">
+	.main{
+		display: flex;
+		border: 5px solid green;
+	}
+	.container1{
+		width:1000px;
+		height: 100vh;
+		margin: 5px;
+		background: blueviolet;
+	}
+	.container2{
+		width: 500px;
+		height: 100vh;
+		margin: 5px;
+		background: deeppink;
+	}
+	.container1 button{
+		font-size: 30px;
+	}
+	.container1 img{
+		width: 30px;
+		height: 30px;
+	}
+	.text-container{
+		  position: relative;
+ /* width: 300px;
+  height: 200px;*/
+/*  border: 1px solid #ccc;*/
+  margin: 50px;
+
+	}
+	textarea{
+    width: 500px;
+    height: 300px;
+/*    background: yellow;*/
+    margin: auto;
+    
+    font-size: inherit;
+/*  resize: none;*/
+}
+</style>
+<body>
+	<div class="main">
+		<div class="container1">
+			<!-- <button onclick="undo()">Undo<img src="img/undo.jpg"></button> -->
+			<!-- <button onclick="redo()">Redo<img src="img/redo.jpg"></button> -->
+			<div class="font-selector">
+
+
+			</div>
+
+			<div class="text-container">
+				<label for="textInput"></label>
+				<textarea id="textInput"></textarea>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="font">
+				<label for="fontDropdown">Select a Font:</label> 
+				<select id="fontDropdown"></select></div>
+				<div class="size">
+					<label for="sizeDropdown">Select a size:</label> 
+					<select id="sizeDropdown"></select>
+				</div>
+				<div class="color">
+					<label for="colorDropdown">Select a colour:</label> 
+					<select id="colorDropdown">
+            <option value="blue">Blue</option>
+            <option value="pink">Pink</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="orange">Orange</option>
+            <option value="black">Black</option>
+        </select>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+	</html>
